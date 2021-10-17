@@ -1,4 +1,4 @@
-# Rails JWT API Base
+# Rails JWT API Base for Vue/Nuxt with Buefy
 
 This repository contains application example build into the [API on Rails 6](https://github.com/madeindjs/api_on_rails) book.
 
