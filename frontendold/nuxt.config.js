@@ -1,15 +1,17 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  ssr: false,
+
   server: {
-    port: 8080
+    port: 8080,
   },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'frontent',
+    title: 'frontend',
     htmlAttrs: {
       lang: 'en'
     },
@@ -26,6 +28,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -41,8 +44,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/buefy
-    'nuxt-buefy',
+    // https://go.nuxtjs.dev/bootstrap
+    'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
