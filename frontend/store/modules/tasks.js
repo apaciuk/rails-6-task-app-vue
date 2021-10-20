@@ -28,7 +28,14 @@ const actions = {
 const mutations = {
     setTasks: (state, tasks) => (state.tasks = tasks),
     removeTask: (state, id) =>
-    (state.tasks = state.tasks.filter(task => task.id !== id))
+    (state.tasks = state.tasks.filter(task => task.id !== id)),
+    setUpdatedTask: (state, updatedTask) => {
+        const index = state.tasks.findIndex(task => task.id === updatedTask.id);
+        if (index !== -1) {
+            state.tasks.splice(index, 1, updatedTask);
+        }
+
+    }
 };
 export default {
     state,

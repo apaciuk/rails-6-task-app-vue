@@ -1,6 +1,5 @@
 <template>
 <div class="container">
-  <h1>Tasks</h1>
   <div class="legend">
    <span>Double click to mark as complete</span>
    <span>
@@ -26,6 +25,7 @@
         </b-icon>
  </div>
  </div>
+ <AddTask />
  </div>
 </template>
 <script>
